@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink'
 
 const Header = () => {
     const [navbar, setNavbar] = useState(false);
@@ -57,16 +58,16 @@ const Header = () => {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="font-semibold text-lg hover:underline">
-                                <Link to='/' className='hover:bg-cyan-300 p-2 rounded-md'>Home</Link>
+                                <ActiveLink to='/' className='hover:bg-cyan-300 p-2 rounded-md'>Home</ActiveLink>
                             </li>
                             <li className="font-semibold text-lg hover:underline">
-                                <Link to='all-tours' className='hover:bg-cyan-300 p-2 rounded-md'>All Tours</Link>
+                                <ActiveLink to='all-tours' className='hover:bg-cyan-300 p-2 rounded-md'>All Tours</ActiveLink>
                             </li>
                             <li className="font-semibold text-lg hover:underline">
-                                <Link to='trending-tours' className='hover:bg-cyan-300 p-2 rounded-md'>Trending Tours</Link>
+                                <ActiveLink to='trending-tours' className='hover:bg-cyan-300 p-2 rounded-md'>Trending Tours</ActiveLink>
                             </li>
                             <li className="font-semibold text-lg hover:underline">
-                                <Link to='cheapest-tours' className='hover:bg-cyan-300 p-2 rounded-md'>Cheapest Tours</Link>
+                                <ActiveLink to='cheapest-tours' className='hover:bg-cyan-300 p-2 rounded-md'>Cheapest Tours</ActiveLink>
                             </li>
                         </ul>
                     </div>
