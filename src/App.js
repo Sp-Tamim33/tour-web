@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import AllTour from "./Components/AllTour/AllTour";
+import AllTour from "./Components/AllTour/AllTours";
 import CheapestTour from "./Components/CheapestTour/CheapestTour";
 import Home from "./Components/Home/Home";
 import TrendingTours from "./Components/TrendingTours/TrendingTours";
