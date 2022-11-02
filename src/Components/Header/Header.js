@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [navbar, setNavbar] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
                                 {navbar ? (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-white"
+                                        className="w-6 h-6 text-cyan-400"
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
                                     >
@@ -32,7 +33,7 @@ const Header = () => {
                                 ) : (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-white"
+                                        className="w-6 h-6 text-cyan-400"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -56,16 +57,16 @@ const Header = () => {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="font-semibold text-lg hover:underline">
-                                <a href="javascript:void(0)">Home</a>
+                                <Link to='/' className='hover:bg-cyan-300 p-2 rounded-md'>Home</Link>
                             </li>
                             <li className="font-semibold text-lg hover:underline">
-                                <a href="javascript:void(0)">Blog</a>
+                                <Link to='all-tours' className='hover:bg-cyan-300 p-2 rounded-md'>All Tours</Link>
                             </li>
                             <li className="font-semibold text-lg hover:underline">
-                                <a href="javascript:void(0)">About US</a>
+                                <Link to='trending-tours' className='hover:bg-cyan-300 p-2 rounded-md'>Trending Tours</Link>
                             </li>
                             <li className="font-semibold text-lg hover:underline">
-                                <a href="javascript:void(0)">Contact US</a>
+                                <Link to='cheapest-tours' className='hover:bg-cyan-300 p-2 rounded-md'>Cheapest Tours</Link>
                             </li>
                         </ul>
                     </div>
