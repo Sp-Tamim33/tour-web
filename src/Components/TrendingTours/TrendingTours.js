@@ -23,7 +23,7 @@ const TrendingTours = () => {
     return (
         <div>
             <h1 className='text-center text-2xl py-4 font-semibold underline'>Let's Checkout Top Trending Tours</h1>
-            <div className='grid grid-cols-3 mx-12'>
+            <div className='grid grid-cols-1 md:grid-cols-3 mx-12'>
                 {
                     trendingTours.map(tour => <AllTour key={tour._id} tour={tour}></AllTour>)
                 }
